@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LifeLink connects blood donors, patients, hospitals, and blood banks to save lives during medical emergencies. Find donors, register, and request blood instantly.">
+  <meta name="keywords" content="blood donor, blood bank, emergency blood, blood donation, LifeLink, donor network">
+  <meta name="author" content="LifeLink">
+  <meta property="og:title" content="LifeLink – Smart Blood Donor Network">
+  <meta property="og:description" content="Connecting donors and saving lives. Find blood donors, register as a donor, or submit emergency requests.">
+  <meta property="og:type" content="website">
+  <title>LifeLink – Smart Blood Donor Network</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🩸</text></svg>">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="main-header">
+    <div class="container">
+      <div class="logo" onclick="navigateTo('home')">
+        <div class="logo-icon">🩸</div>
+        <span>Life</span><span>Link</span>
+      </div>
+      <nav class="nav" id="main-nav">
+        <a href="#" data-page="home" class="active">Home</a>
+        <a href="#" data-page="register">Register</a>
+        <a href="#" data-page="find">Find Donor</a>
+        <a href="#" data-page="emergency">Emergency</a>
+        <a href="#" data-page="compatibility">Compatibility</a>
+        <a href="#" data-page="banks">Blood Banks</a>
+        <a href="#" data-page="awareness">Awareness</a>
+        <a href="#" data-page="dashboard">Dashboard</a>
+      </nav>
+      <button class="mobile-toggle" id="mobile-toggle" onclick="toggleMobileMenu()" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Content (SPA) -->
+  <main id="main-content"></main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <div class="logo-icon">🩸</div>
+            <span>Life</span><span>Link</span>
+          </div>
+          <p class="tagline">One Platform. Thousands of Lifesavers. Connecting donors, patients, hospitals, and blood banks in one centralized system.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Platform</h4>
+          <a href="#" onclick="navigateTo('find'); return false;">Find Donor</a>
+          <a href="#" onclick="navigateTo('register'); return false;">Register</a>
+          <a href="#" onclick="navigateTo('emergency'); return false;">Emergency</a>
+          <a href="#" onclick="navigateTo('banks'); return false;">Blood Banks</a>
+        </div>
+        <div class="footer-links">
+          <h4>Resources</h4>
+          <a href="#" onclick="navigateTo('compatibility'); return false;">Compatibility</a>
+          <a href="#" onclick="navigateTo('awareness'); return false;">Awareness</a>
+          <a href="#" onclick="navigateTo('dashboard'); return false;">Dashboard</a>
+        </div>
+        <div class="footer-links">
+          <h4>Contact</h4>
+          <a href="#">📞 1800-LIFELINK</a>
+          <a href="#">📧 help@lifelink.org</a>
+          <a href="#">📍 Mumbai, India</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 LifeLink – Riddhika Ghosh</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
